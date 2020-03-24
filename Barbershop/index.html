@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Барбершоп</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-navigation">
+            <a class="main-header-logo">
+                <img src="img/svg/index-logo.svg" width="371" height="155" alt="Логотип Барбершопа Бородинский">
+            </a>
+            <div class="main-navigation-wrapper">
+                <div class="container">
+                    <ul class="site-navigation">
+                        <li><a href="#">ИНФОРМАЦИЯ</a></li>
+                        <li><a href="#">НОВОСТИ</a></li>
+                        <li><a href="price.html">ПРАЙС-ЛИСТ</a></li>
+                        <li><a href="catalog.html">МАГАЗИН</a></li>
+                        <li><a href="#" class="contacts-link">КОНТАКТЫ</a></li>
+                    </ul>
+                    <ul class="user-navigation">
+                        <li>
+                            <a class="login-link" href="login.html">ВХОД</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
+
+        <section class="features">
+            <h2 class="visually-hidden">Преимущества</h2>
+            <ul class="feature-list">
+                <li class="feature-item">
+                    <h3>БЫСТРО</h3>
+                    <p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ
+                        СТРИЖКИ-МИНУТКИ!</p>
+                </li>
+                <li class="feature-item">
+                    <h3>КРУТО</h3>
+                    <p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.
+                        МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!
+                        ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.
+                    </p>
+                </li>
+                <li class="feature-item">
+                    <h3>ДОРОГО</h3>
+                    <p>НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ
+                        ОПРЕДЕЛЕНЫЙ СТАТУС?</p>
+                </li>
+            </ul>
+        </section>
+
+        <div class="index-columns">
+            <section class="news">
+                <h2>НОВОСТИ</h2>
+                <ul class="news-list">
+                    <li class="news-item">
+                        <p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
+                        <time datetime="2019-01-11">11 января</time>
+                    </li>
+                    <li class="news-item">
+                        <p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД
+                            ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
+                        <time datetime="2019-01-18">18 января</time>
+                    </li>
+                </ul>
+                <a href="#" class="button">ВСЕ НОВОСТИ</a>
+            </section>
+
+            <section class="gallery">
+                <h2>ФОТОГАЛЕРЕЯ</h2>
+                <div class="gallery-container">
+                    <figure class="gallery-content">
+                        <a href="#">
+                            <img src="img/index/studio.jpg" width="286" height="164" alt="Фотография студии">
+                        </a>
+                    </figure>
+                    <button class="button gallery-button gallery-button-back">НАЗАД</button>
+                    <button class="button gallery-button gallery-button-next">ВПЕРЕД</button>
+                </div>
+            </section>
+        </div>
+
+
+        <div class="index-columns">
+            <section class="contacts">
+                <h2>КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+                <p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+                    АДРЕС: Г. КИЕВ, бульвар Леси Украинки, 19<br>
+                    ТЕЛЕФОН: +38 (044) 555-05-55</p>
+                <p>ВРЕМЯ РАБОТЫ:<br>
+                    ПН—ПТ: С 10:00 ДО 22:00<br>
+                    СБ—ВС: С 10:00 ДО 19:00</p>
+                <a href="map.html" class="button contacts-button-map">КАК ПРОЕХАТЬ</a>
+                <a href="#" class="button">ОБРАТНАЯ СВЯЗЬ</a>
+            </section>
+
+            <section class="appointment">
+                <h2>ЗАПИСАТЬСЯ</h2>
+                <p class="appointment-info">УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
+                </p>
+                <form class="appointment-form" action="https://echo.htmlacademy.ru" method="POST">
+                    <p class="appointment-item">
+                        <label for="appointment-date-id">ДАТА</label>
+                        <input type="text" name="date" id="appointment-date-id" placeholder="08.10.2019">
+                    </p>
+                    <p class="appointment-item">
+                        <label for="appointment-time-id">ВРЕМЯ</label>
+                        <input type="text" name="time" id="appointment-time-id" placeholder="10:00">
+                    </p>
+                    <p class="appointment-item">
+                        <label for="appointment-name-id">ВАШЕ ИМЯ</label>
+                        <input type="text" name="name" id="appointment-name-id" placeholder="Борода">
+                    </p>
+                    <p class="appointment-item">
+                        <label for="appointment-phone-id">ТЕЛЕФОН</label>
+                        <input type="number" name="phone" id="appointment-phone-id" placeholder="+38 (050) 350-09-20">
+                    </p>
+                    <button class="button" type="submit">ОТПРАВИТЬ</button>
+                </form>
+            </section>
+        </div>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p class="footer-contacts">
+                БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+                АДРЕС: Г. КИЕВ, бульвар Леси Украинки, 19<br>
+                <a href="map.html" class="footer-button-map">КАК НАС НАЙТИ?</a><br>
+                ТЕЛЕФОН: +38 (044) 555-05-55
+            </p>
+            <div class="footer-social">
+                <b>ДАВАЙТЕ ДРУЖИТЬ!</b>
+                <ul>
+                    <li>
+                        <a class="social-button vk" href="#">
+                            <span class="visually-hidden">
+                                Вконтакте
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-button fb" href="#">
+                            <span class="visually-hidden">
+                                Фейсбук
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-button inst" href="#">
+                            <span class="visually-hidden">
+                                Инстаграм
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p class="footer-copyright">
+                <b>РАЗРАБОТАНО:</b>
+                <a href="#" class="button">Alex Futurist</a>
+            </p>
+        </div>
+    </footer>
+
+    <section class="modal modal-login">
+        <h2>ЛИЧНЫЙ КАБИНЕТ</h2>
+        <p>Введите пожалуйста свой логин и пароль</p>
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
+            <p>
+                <label class="visually-hidden" for="login-name">ЛОГИН</label>
+                <input class="login-icon-name" type="text" name="name" id="login-name" placeholder="ЛОГИН">
+            </p>
+            <p>
+                <label class="visually-hidden" for="login-password">ПАРОЛЬ</label>
+                <input class="login-icon-password" type="password" name="password" id="login-password"
+                    placeholder="ПАРОЛЬ">
+            </p>
+            <p class="login-password-info">
+                <label class="login-checkbox">
+                    <input class="visually-hidden" type="checkbox" name="remember" id="login-password-info">
+                    <span class="checkbox-indicator"></span>
+                    ЗАПОМНИТЕ МЕНЯ
+                </label>
+                <a class="restore" href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
+            </p>
+            <button class="button" type="submit">ВОЙТИ</button>
+        </form>
+        <button type="button" class="modal-close">X</button>
+    </section>
+    <div class="modal-overlay"></div>
+
+    <section class="modal modal-map">
+        <h2 class="visually-hidden">КАК НАС НАЙТИ?</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.6770846303775!2d30.536296015730507!3d50.42848777947234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf0e5b377b5f%3A0xca631dfe17ff337e!2z0LHRg9C70YzQstCw0YAg0JvQtdGB0ZYg0KPQutGA0LDRl9C90LrQuCwgMTksINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1583921578869!5m2!1suk!2sua"
+            width="766" height="560" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0">
+        </iframe>
+        <p>
+            <img src="img/index/map.jpg" width="766" height="560" alt="Офис компании на карте">
+        </p>
+        <button type="button" class="modal-close">X</button>
+    </section>
+    <div class="modal-overlay"></div>
+
+    <script src="js/scripts1.min.js"></script>
+</body>
+
+</html>
