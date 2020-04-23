@@ -66,7 +66,7 @@
                         </li>
                         <li>
                             <label for="name"></label>
-                            <input class="form__item" type="text" name="name" id="name" placeholder="Имя" required>
+                            <input class="form__item  form__name" type="text" name="name" id="name" placeholder="Имя" required>
                         </li>
                         <li><label for="patronymic"></label>
                             <input class="form__item" type="text" name="patronymic" id="patronymic"
@@ -78,7 +78,7 @@
                     <ul>
                         <li>
                             <label for="phone"></label>
-                            <input class="form__item" type="text" name="phone" id="phone"
+                            <input class="form__item  form__phone" type="text" name="phone" id="phone"
                                 placeholder="Контактный телефон" required>
                         </li>
                         <li>
@@ -216,6 +216,16 @@
             </div>
         </form>
         <button type="button" class="modal__close">X</button>
+    </section>
+    <div class="modal__overlay"></div>
+
+    <!--МОДАЛКА-Форма записи-->
+    <section class="modal-form">
+        <h2 class="modal-form__title">ЭТО УСПЕХ!</h2>
+        <p class="modal-form__description">Ваша заявка отправлена. <br>
+            Ожидайте, мы свяжемся с вами как только
+            будет минутка.</p>
+        <button class="modal-form__close  button--brown" type="button">ЗАКРЫТЬ</button>
     </section>
     <div class="modal__overlay"></div>
 
