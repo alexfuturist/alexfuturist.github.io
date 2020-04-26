@@ -15,12 +15,11 @@
 <body>
     <header class="page-header">
         <a class="page-header__logo">
-            <img class="page-header__logo-mobile" src="img/svg/logotype-mobile.png" width="226" height="30"
-                alt="Барбершоп Бородинский">
-            <img class="page-header__logo-tablet" src="img/index/logotype-tablet.png" width="370" height="101"
-                alt="Барбершоп Бородинский">
-            <img class="page-header__logo-desktop" src="img/index/logotype-desktop.png" width="370" height="153"
-                alt="Барбершоп Бородинский">
+            <picture>
+                <source media="(min-width:1200px)" srcset="img/svg/logotype-desktop.png">
+                <source media="(min-width:768px)" srcset="img/svg/logotype-tablet.png">
+                <img class="page-header__logo-image" src="img/svg/logotype-mobile.png" alt="Барбершоп Бородинский">
+            </picture>
         </a>
 
         <nav class="main-nav  main-nav--close">
@@ -189,12 +188,13 @@
                 <div class="rewiews__list slider-2">
                     <blockquote class="rewiews__item  slider-2__item">
                         <p class="rewiews__autor-picture">
-                            <img class="rewiews__autor-image-mobile" src="img/index/photo-mobile-1.png" width="50"
-                                height="48" alt="Фото Тревиса Баркера">
-                            <img class="rewiews__autor-image-tablet" src="img/index/photo-tablet-1.png" width="80"
-                                height="80" alt="Фото Тревиса Баркера">
-                            <img class="rewiews__autor-image-descktop" src="img/index/photo-descktop-1.png" width="249"
-                                height="160" alt="Фото Тревиса Баркера">
+                            <picture>
+                                <source media="(min-width:1200px)" srcset="img/index/photo-descktop-1.webp">
+                                <source media="(min-width:1200px)" srcset="img/index/photo-descktop-1.png">
+                                <source media="(min-width:768px)" srcset="img/index/photo-tablet-1.png">
+                                <img class="rewiews__autor-image" src="img/index/photo-mobile-1.png"
+                                    alt="Фото Тревиса Баркера">
+                            </picture>
                         </p>
                         <div class="rewiews__description">
                             <cite class="rewiews__autor-name">Трэвис Баркер</cite>
@@ -206,12 +206,12 @@
                     </blockquote>
                     <blockquote class="rewiews__item  slider-2__item">
                         <p class="rewiews__autor-picture">
-                            <img class="rewiews__autor-image-mobile" src="img/index/photo-mobile-2.png" width="50"
-                                height="48" alt="Фото Тревиса Баркера">
-                            <img class="rewiews__autor-image-tablet" src="img/index/photo-tablet-2.png" width="80"
-                                height="80" alt="Фото Тревиса Баркера">
-                            <img class="rewiews__autor-image-descktop" src="img/index/photo-descktop-2.png" width="249"
-                                height="160" alt="Фото Тревиса Баркера">
+                            <picture>
+                                <source media="(min-width:1200px)" srcset="img/index/photo-descktop-2.png">
+                                <source media="(min-width:768px)" srcset="img/index/photo-tablet-2.png">
+                                <img class="rewiews__autor-image" src="img/index/photo-mobile-2.png"
+                                    alt="Фото Тревиса Баркера">
+                            </picture>
                         </p>
                         <div class="rewiews__description">
                             <cite class="rewiews__autor-name">Джон Смит</cite>
@@ -222,12 +222,12 @@
                     </blockquote>
                     <blockquote class="rewiews__item  slider-2__item">
                         <p class="rewiews__autor-picture">
-                            <img class="rewiews__autor-image-mobile" src="img/index/photo-mobile-3.png" width="50"
-                                height="48" alt="Фото Тревиса Баркера">
-                            <img class="rewiews__autor-image-tablet" src="img/index/photo-tablet-3.png" width="80"
-                                height="80" alt="Фото Тревиса Баркера">
-                            <img class="rewiews__autor-image-descktop" src="img/index/photo-descktop-3.png" width="249"
-                                height="160" alt="Фото Тревиса Баркера">
+                            <picture>
+                                <source media="(min-width:1200px)" srcset="img/index/photo-descktop-3.png">
+                                <source media="(min-width:768px)" srcset="img/index/photo-tablet-3.png">
+                                <img class="rewiews__autor-image" src="img/index/photo-mobile-3.png"
+                                    alt="Фото Тревиса Баркера">
+                            </picture>
                         </p>
                         <div class="rewiews__description">
                             <cite class="rewiews__autor-name">Боб Бородайло</cite>

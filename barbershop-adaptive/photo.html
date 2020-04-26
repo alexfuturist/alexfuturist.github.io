@@ -15,12 +15,11 @@
 <body>
     <header class="page-header">
         <a class="page-header__logo">
-            <img class="page-header__logo-mobile" src="img/svg/logotype-mobile.png" width="226" height="30"
-                alt="Барбершоп Бородинский">
-            <img class="page-header__logo-tablet" src="img/index/logotype-tablet.png" width="370" height="101"
-                alt="Барбершоп Бородинский">
-            <img class="page-header__logo-desktop" src="img/index/logotype-desktop.png" width="370" height="153"
-                alt="Барбершоп Бородинский">
+            <picture>
+                <source media="(min-width:1200px)" srcset="img/svg/logotype-desktop.png">
+                <source media="(min-width:768px)" srcset="img/svg/logotype-tablet.png">
+                <img class="page-header__logo-image" src="img/svg/logotype-mobile.png" alt="Барбершоп Бородинский">
+            </picture>
         </a>
 
         <nav class="main-nav  main-nav--close">
