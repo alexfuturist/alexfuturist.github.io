@@ -13,7 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/css/main.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
 </head>
 
 <body>
@@ -64,7 +64,10 @@
                 <!--Карточка большая-->
                 <div class="photo-item  photo-item--big">
                     <div class="photo-item__image--big">
-                        <img src="img/photo/1.jpg" alt="Лжепётр Мчиславский" width="480" height="480">
+                        <picture>
+                            <source media="(min-width:1200px)" srcset="img/photo/1.jpg">
+                            <img src="img/photo/1-mobile.jpg" alt="Лжепётр Мчиславский">
+                        </picture>
                     </div>
 
                     <div class="photo-item__review photo-item__review--wide">
