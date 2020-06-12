@@ -14,7 +14,7 @@
     <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="js/no-js.min.js" as="script">
     <script src="js/webp.min.js"></script>
-    <script src="js/picturefill.min.js"></script>
+    <script src="js/picturefill.min.js" async></script>
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 
@@ -149,11 +149,9 @@
                         </tr>
                     </table>
                 </div>
-                <picture class="hit__image">
-                    <source srcset="img/index/hit_desktop.webp" type="image/webp">
-                    <source srcset="img/index/hit_desktop.jpg" type="image/jpg">
+                <div class="hit__image">
                     <picture><source srcset="img/index/hit_desktop.webp" type="image/webp"><img src="img/index/hit_desktop.jpg" alt="Вязаные корзинки"></picture>
-                </picture>
+                </div>
 
                 <div class="hit__buy">
                     <b class="hit__price">Цена: 300 грн.</b>
