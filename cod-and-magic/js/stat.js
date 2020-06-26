@@ -62,14 +62,13 @@ window.renderStatistics = function (ctx, players, times) {
         ctx.fillStyle = 'black'; // черный цвет текста
         ctx.fillText(Math.floor(times[i]), BAR_X + (BAR_GAP + BAR_WIDTH) * i, (BAR_Y + BAR_HEIGHT - ((times[i] * BAR_HEIGHT) / maxTime)) - GAP);
 
-        //Колонки
+        //Цвет колонок
         if (players[i] === 'Вы') {
             ctx.fillStyle = 'red'; // синий рандомный оттенок
         } else {
             ctx.fillStyle = color_Bar; // синий рандомный оттенок
         }
-        
-        //Цвет колонки "Вы":
+        //Отрисовка колонок
         ctx.fillRect(BAR_X + (BAR_GAP + BAR_WIDTH) * i, (BAR_Y + BAR_HEIGHT - ((times[i] * BAR_HEIGHT) / maxTime)), BAR_WIDTH, (times[i] * BAR_HEIGHT) / maxTime);
 
         //Имена
