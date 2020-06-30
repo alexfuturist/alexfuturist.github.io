@@ -29,11 +29,13 @@ var renderCloud = function (ctx, x, y, color) {
 // Функция поиска наибольшего элемента массива
 var getMaxElement = function (arr) {
     var maxElement = arr[0];
+
     for (var i = 0; i < arr.length; i++) {
         if (maxElement < arr[i]) {
             maxElement = arr[i];
         }
     }
+
     return maxElement;
 }
 
@@ -50,6 +52,7 @@ window.renderStatistics = function (ctx, players, times) {
 
     //ГИСТОГРАММА
     var maxTime = getMaxElement(times);
+    
     for (var i = 0; i < players.length; i++) {
         var opacitys = [0.5, 0.7, 0.9, 1]; //набор значений непрозрачности синего цвета
         var rand = Math.floor(Math.random() * opacitys.length); //случайный ключ массива
