@@ -8,72 +8,72 @@ var TYPE_AND_TITLES = {
         TYPE: 'Дворец',
         TITLES: 'Огромный прекрасный дворец',
         PHOTOS: [
-            "https://raw.githubusercontent.com/alexfuturist/KeksoBooking/master/app/img/photo/palace-big-1.jpg",
-            "https://raw.githubusercontent.com/alexfuturist/KeksoBooking/master/app/img/photo/palace-big-2.jpg",
-            "https://raw.githubusercontent.com/alexfuturist/KeksoBooking/master/app/img/photo/palace-big-3.jpg"
+            "https://raw.githubusercontent.com/alexfuturist/alexfuturist.github.io/master/keksobooking/img/photo/palace-big-1.jpg",
+            "https://raw.githubusercontent.com/alexfuturist/alexfuturist.github.io/master/keksobooking/img/photo/palace-big-2.jpg",
+            "https://raw.githubusercontent.com/alexfuturist/alexfuturist.github.io/master/keksobooking/img/photo/palace-big-3.jpg"
         ]
     },
     'PALACE_SMALL': {
         TYPE: 'Дворец',
         TITLES: 'Старый заброшенный дворец',
         PHOTOS: [
-            "https://raw.githubusercontent.com/alexfuturist/KeksoBooking/master/app/img/photo/palace-small-1.jpg",
-            "https://raw.githubusercontent.com/alexfuturist/KeksoBooking/master/app/img/photo/palace-small-2.jpg",
-            "https://raw.githubusercontent.com/alexfuturist/KeksoBooking/master/app/img/photo/palace-small-3.jpg"
+            "https://raw.githubusercontent.com/alexfuturist/alexfuturist.github.io/master/keksobooking/img/photo/palace-small-1.jpg",
+            "https://raw.githubusercontent.com/alexfuturist/alexfuturist.github.io/master/keksobooking/img/photo/palace-small-2.jpg",
+            "https://raw.githubusercontent.com/alexfuturist/alexfuturist.github.io/master/keksobooking/img/photo/palace-small-3.jpg"
         ]
     },
     'FLAT_BIG': {
         TYPE: 'Квартира',
         TITLES: 'Большая уютная квартира',
         PHOTOS: [
-            "https://raw.githubusercontent.com/alexfuturist/KeksoBooking/master/app/img/photo/flat-big-1.jpg",
-            "https://raw.githubusercontent.com/alexfuturist/KeksoBooking/master/app/img/photo/flat-big-2.jpg",
-            "https://raw.githubusercontent.com/alexfuturist/KeksoBooking/master/app/img/photo/flat-big-3.jpg"
+            "https://raw.githubusercontent.com/alexfuturist/alexfuturist.github.io/master/keksobooking/img/photo/flat-big-1.jpg",
+            "https://raw.githubusercontent.com/alexfuturist/alexfuturist.github.io/master/keksobooking/img/photo/flat-big-2.jpg",
+            "https://raw.githubusercontent.com/alexfuturist/alexfuturist.github.io/master/keksobooking/img/photo/flat-big-3.jpg"
         ]
     },
     'FLAT_SMALL': {
         TYPE: 'Квартира',
         TITLES: 'Маленькая квартирка',
         PHOTOS: [
-            "https://raw.githubusercontent.com/alexfuturist/KeksoBooking/master/app/img/photo/flat_small-1.jpg",
-            "https://raw.githubusercontent.com/alexfuturist/KeksoBooking/master/app/img/photo/flat_small-2.jpg",
-            "https://raw.githubusercontent.com/alexfuturist/KeksoBooking/master/app/img/photo/flat_small-3.jpg"
+            "https://raw.githubusercontent.com/alexfuturist/alexfuturist.github.io/master/keksobooking/img/photo/flat_small-1.jpg",
+            "https://raw.githubusercontent.com/alexfuturist/alexfuturist.github.io/master/keksobooking/img/photo/flat_small-2.jpg",
+            "https://raw.githubusercontent.com/alexfuturist/alexfuturist.github.io/master/keksobooking/img/photo/flat_small-3.jpg"
         ]
     },
     'HOUSE_BIG': {
         TYPE: 'Дом',
         TITLES: 'Красивый гостевой домик',
         PHOTOS: [
-            "https://raw.githubusercontent.com/alexfuturist/KeksoBooking/master/app/img/photo/house-big-1.jpg",
-            "https://raw.githubusercontent.com/alexfuturist/KeksoBooking/master/app/img/photo/house-big-2.jpg",
-            "https://raw.githubusercontent.com/alexfuturist/KeksoBooking/master/app/img/photo/house-big-3.jpg"
+            "https://raw.githubusercontent.com/alexfuturist/alexfuturist.github.io/master/keksobooking/img/photo/house-big-1.jpg",
+            "https://raw.githubusercontent.com/alexfuturist/alexfuturist.github.io/master/keksobooking/img/photo/house-big-2.jpg",
+            "https://raw.githubusercontent.com/alexfuturist/alexfuturist.github.io/master/keksobooking/img/photo/house-big-3.jpg"
         ]
     },
     'HOUSE_SMALL': {
         TYPE: 'Дом',
         TITLES: 'Отличный маленький домик',
         PHOTOS: [
-            "https://raw.githubusercontent.com/alexfuturist/KeksoBooking/master/app/img/photo/house-small-1.jpg",
-            "https://raw.githubusercontent.com/alexfuturist/KeksoBooking/master/app/img/photo/house-small-2.jpg",
-            "https://raw.githubusercontent.com/alexfuturist/KeksoBooking/master/app/img/photo/house-small-3.jpg"
+            "https://raw.githubusercontent.com/alexfuturist/alexfuturist.github.io/master/keksobooking/img/photo/house-small-1.jpg",
+            "https://raw.githubusercontent.com/alexfuturist/alexfuturist.github.io/master/keksobooking/img/photo/house-small-2.jpg",
+            "https://raw.githubusercontent.com/alexfuturist/alexfuturist.github.io/master/keksobooking/img/photo/house-small-3.jpg"
         ]
     },
     'BUNGALO_BIG': {
         TYPE: 'Бунгало',
         TITLES: 'Уютное бунгало далеко от моря',
         PHOTOS: [
-            "https://raw.githubusercontent.com/alexfuturist/KeksoBooking/master/app/img/photo/bungalo-big-1.jpg",
-            "https://raw.githubusercontent.com/alexfuturist/KeksoBooking/master/app/img/photo/bungalo-big-2.jpg",
-            "https://raw.githubusercontent.com/alexfuturist/KeksoBooking/master/app/img/photo/bungalo-big-3.jpg"
+            "https://raw.githubusercontent.com/alexfuturist/alexfuturist.github.io/master/keksobooking/img/photo/bungalo-big-1.jpg",
+            "https://raw.githubusercontent.com/alexfuturist/alexfuturist.github.io/master/keksobooking/img/photo/bungalo-big-2.jpg",
+            "https://raw.githubusercontent.com/alexfuturist/alexfuturist.github.io/master/keksobooking/img/photo/bungalo-big-3.jpg"
         ]
     },
     'BUNGALO_SMALL': {
         TYPE: 'Бунгало',
         TITLES: 'Маленькое бунгало прямо на воде',
         PHOTOS: [
-            "https://raw.githubusercontent.com/alexfuturist/KeksoBooking/master/app/img/photo/bungalo-small-1.jpg",
-            "https://raw.githubusercontent.com/alexfuturist/KeksoBooking/master/app/img/photo/bungalo-small-2.jpg",
-            "https://raw.githubusercontent.com/alexfuturist/KeksoBooking/master/app/img/photo/bungalo-small-3.jpg"
+            "https://raw.githubusercontent.com/alexfuturist/alexfuturist.github.io/master/keksobooking/img/photo/bungalo-small-1.jpg",
+            "https://raw.githubusercontent.com/alexfuturist/alexfuturist.github.io/master/keksobooking/img/photo/bungalo-small-2.jpg",
+            "https://raw.githubusercontent.com/alexfuturist/alexfuturist.github.io/master/keksobooking/img/photo/bungalo-small-3.jpg"
         ]
     }
 };
