@@ -1,10 +1,4 @@
-/////================== part-1 ===================//////
-
-var setup = document.querySelector('.setup');
-
-setup.classList.remove('hidden');
-
-/////================== part-2 ===================//////
+/////================== part-1-2 ===================//////
 
 //Массив Имен
 var NAMES = [
@@ -30,8 +24,8 @@ var SURNAMES = [
     'Ирвинг'
 ];
 
-//Массив цветов мантии
-var COATCOLOR = [
+//Массив цвета мантий
+var COAT_COLOR = [
     'rgb(101, 137, 164)',
     'rgb(241, 43, 107)',
     'rgb(146, 100, 161)',
@@ -47,6 +41,15 @@ var EYES_COLOR= [
     'blue',
     'yellow',
     'green'
+];
+
+//Массив цвета фаерболов
+var FIREBALL_COLOR= [
+    '#ee4830',
+    '#30a8ee',
+    '#5ce6c0',
+    '#e848d5',
+    '#e6e848'
 ];
 
 //Функция возрата случайного ключа массива
@@ -77,7 +80,7 @@ for (var i = 0; i < 4; i++) {
     var nameRand = namesRand + ' ' + surnamesRand;
 
     //Возрат случайного элемента массива 'coatColor'
-    var coatColorRand = arrRandItem(COATCOLOR);
+    var coatColorRand = arrRandItem(COAT_COLOR);
 
     //Возрат случайного элемента массива 'eyesColor'
     var eyesColorRand = arrRandItem(EYES_COLOR);

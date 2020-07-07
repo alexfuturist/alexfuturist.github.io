@@ -52,14 +52,14 @@ window.renderStatistics = function (ctx, players, times) {
 
     //ГИСТОГРАММА
     var maxTime = getMaxElement(times);
-    
+
     for (var i = 0; i < players.length; i++) {
         var opacitys = [0.5, 0.7, 0.9, 1]; //набор значений непрозрачности синего цвета
         var rand = Math.floor(Math.random() * opacitys.length); //случайный ключ массива
         var opacity = opacitys[rand]; //значение непрозрачности синего цвета конкретного столбика
         console.log(opacity);
-        var color_Bar = 'rgba(55, 0, 255, ' + opacity + ')'; // синий рандомный оттенок
-        console.log(color_Bar);
+        var colorBar = 'rgba(55, 0, 255, ' + opacity + ')'; // синий рандомный оттенок
+        console.log(colorBar);
 
         //Значения времени
         ctx.fillStyle = 'black'; // черный цвет текста
@@ -69,7 +69,7 @@ window.renderStatistics = function (ctx, players, times) {
         if (players[i] === 'Вы') {
             ctx.fillStyle = 'red'; // синий рандомный оттенок
         } else {
-            ctx.fillStyle = color_Bar; // синий рандомный оттенок
+            ctx.fillStyle = colorBar; // синий рандомный оттенок
         }
         //Отрисовка колонок
         ctx.fillRect(BAR_X + (BAR_GAP + BAR_WIDTH) * i, (BAR_Y + BAR_HEIGHT - ((times[i] * BAR_HEIGHT) / maxTime)), BAR_WIDTH, (times[i] * BAR_HEIGHT) / maxTime);
