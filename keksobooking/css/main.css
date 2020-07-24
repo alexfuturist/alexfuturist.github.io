@@ -391,19 +391,28 @@ textarea:focus {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 .popup__pictures li:first-child {
   display: none;
 }
 
+.popup__pictures li:last-child {
+  margin-right: auto;
+}
+
 .popup__pictures li {
-  width: 32%;
+  width: 31%;
   height: 49px;
+  margin-bottom: 3px;
+  margin-right: 3px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -754,6 +763,10 @@ textarea:focus {
 
 .footer-social-item-vk {
   background-position: -10px -10px;
+}
+
+.hidden {
+  display: none;
 }
 
 .webp .feature {

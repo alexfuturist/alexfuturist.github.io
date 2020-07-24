@@ -48,9 +48,11 @@
 
           <select name="housing-price" id="housing-price" class="map__filter">
             <option value="any" selected>Любая</option>
-            <option value="middle">10000 - 50000&#x20bd;</option>
-            <option value="low">до 10000&#x20bd;</option>
-            <option value="high">от 50000&#x20bd;</option>
+           
+            <option value="low">до 500₴;</option>
+            <option value="middle">500 - 999₴;</option>
+            <option value="high">1000 - 5000₴;</option>
+            <option value="extra">от 5000₴;</option>
           </select>
 
           <select name="housing-rooms" id="housing-rooms" class="map__filter">
@@ -92,7 +94,7 @@
     <div class="notice">
       <h2 class="notice__title">Ваше объявление</h2>
 
-      <form class="notice__form notice__form--disabled" method="post" enctype="multipart/form-data" autocomplete="off">
+      <form class="notice__form notice__form--disabled" action="https://js.dump.academy/keksobooking"  method="post" enctype="multipart/form-data" autocomplete="off">
         <fieldset class="notice__header">
           <legend>Ваша фотография (для карты)</legend>
           <div class="notice__photo">
@@ -111,12 +113,12 @@
 
         <fieldset class="form__element form__element--wide">
           <label for="title">Заголовок объявления</label>
-          <input id="title" name="title" type="text" placeholder="Милая, уютная квартирка в центре Токио">
+          <input id="title" name="title" type="text" placeholder="Милая, уютная квартирка в центре Токио" minlength="30" maxlength="100" required>
         </fieldset>
 
         <fieldset class="form__element form__element--wide">
           <label for="address">Адрес</label>
-          <input id="address" name="address" type="text">
+          <input id="address" name="address" type="text" readonly required>
         </fieldset>
 
         <fieldset class="form__element">
@@ -130,8 +132,8 @@
         </fieldset>
 
         <fieldset class="form__element">
-          <label for="price">Цена за ночь, руб.</label>
-          <input id="price" name="price" type="number" placeholder="5000">
+          <label for="price">Цена за ночь, грн.</label>
+          <input id="price" name="price" type="number" placeholder="500 — 999" min="500" max="1000" required>
         </fieldset>
 
         <fieldset class="form__element">
@@ -161,9 +163,9 @@
         <fieldset class="form__element">
           <label for="capacity">Количество мест</label>
           <select id="capacity" name="capacity">
-            <option value="3" selected>для 3 гостей</option>
+            <option value="3">для 3 гостей</option>
             <option value="2">для 2 гостей</option>
-            <option value="1">для 1 гостя</option>
+            <option value="1" selected>для 1 гостя</option>
             <option value="0">не для гостей</option>
           </select>
         </fieldset>
@@ -266,7 +268,19 @@
         draggable="false"></button>
   </template>
 
-  <script src="js/map.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/map-pin.js"></script>
+  <script src="js/map-card.js"></script>
+  <script src="js/map-activation.js"></script>
+
+  <!-- <script src="js/backend.js"></script>
+  <script src="js/map-pin-ajax.js"></script>
+  <script src="js/map-card-ajax.js"></script>
+  <script src="js/map-activation-ajax.js"></script> -->
+
+  <script src="js/form.js"></script>
+  <script src="js/form-upload.js"></script>
+  <script src="js/pin-moving.js"></script>
 </body>
 
 </html>
