@@ -1,6 +1,5 @@
 "use strict";
-/////================ СОЗДАЕМ НОВЫЕ МЕТКИ (Пины на карте) ================//////
-
+/////================ МОДУЛЬ СОЗДАНИЯ МЕТОК ОБЪЯВЛЕНИЙ (Пинов на карте) ================//////
 (function () {
 
     var map = document.querySelector('.map');
@@ -41,7 +40,6 @@
 
         //Записываем в пустой объект наш шаблон, с уже внесенными в него изменениями
         mapPinFragment.appendChild(mapPinElement);
-        // console.log(mapPinFragment);
     }
 
     //Находим в разметке блок, для добавления меток
@@ -52,7 +50,7 @@
     window.mapPinsShow = function () {
         mapPins.appendChild(mapPinFragment);
 
-        var mapPinsAdded = document.querySelectorAll('.map__pin');
+        window.mapPinsAdded = document.querySelectorAll('.map__pin');
 
         for (var i = 0; i < mapPinsAdded.length; i++) {
             mapPinsAdded[i].classList.remove('hidden');
@@ -63,18 +61,15 @@
     //Функция скрытия добавленных меток объявлений
     window.mapPinsHidden = function () {
 
-        var mapPinsAdded = document.querySelectorAll('.map__pin');
-
+        //Скрываем все метки
         for (var i = 0; i < mapPinsAdded.length; i++) {
             mapPinsAdded[i].classList.add('hidden');
         }
 
+        //находим главную метку и показываем ее
         window.mapPinMain = document.querySelector('.map__pin--main');
         mapPinMain.classList.remove('hidden');
     };
 
 })();
-
-
-
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//

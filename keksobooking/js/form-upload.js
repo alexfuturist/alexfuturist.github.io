@@ -7,7 +7,7 @@
     // ОТПРАВКА НА СЕРВЕР ДАННЫХ О СОЗДАННОМ ОБЪЯВЛЕНИИ
 
     //куда отправляем (адрес сервера)
-    var URL = 'https://js.dump.academy/keksobooking';
+    var URL = 'https://javascript.pages.academy/keksobooking';
 
     //функция отправки данных на сервер
     window.backend_upload = function (data, onLoad, onError) {

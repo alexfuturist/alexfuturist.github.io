@@ -1,6 +1,5 @@
 "use strict";
-/////================ Разблокирование полей формы ================//////
-
+/////================ МОДУЛЬ Разблокирования полей формы ================//////
 
 (function () {
 
@@ -57,14 +56,12 @@
 
     //Выполняем функцию записи адреса Главной метки в инпут адреса
     inputAddressShow();
-    // console.log(inputAddress);
 
 
 
     //Cкрытие Всех Карточек объявлений (сразу после загрузки страницы)
     var mapCardsHidden = function () {
         window.mapCard = document.querySelectorAll('.map__card');
-        // console.log(mapCard);
 
         for (var i = 0; i < mapCard.length; i++) {
             mapCard[i].classList.add('hidden');
@@ -128,8 +125,19 @@
         setCapacity(); //вызов метода взаимоизменения комнат/гостей
     };
 
+    //Флаг возможности активировать страницу
+    window.abilityActivation = true;
+
     //Клик по главной метке - активация страницы
-    mapPinMain.addEventListener('mouseup', mapActivation);
+    mapPinMain.addEventListener('mouseup', function () {
+        if (abilityActivation) {
+            mapActivation();
+            //Исключаем возможность повторно активировать страницу
+            abilityActivation = false;
+        }
+    });
+
+
 
 
 
@@ -154,6 +162,8 @@
         mapPinsHidden(); //Скрытие меток объявлений 
         mapCardsHidden(); //Cкрытие Карточек объявлений
         mapPinMainSet(); //Установка главной метки в начальное положение
+        //Даем возможность повторно активировать страницу
+        abilityActivation = true;
     };
 
     formResetButton.addEventListener('click', formReset);

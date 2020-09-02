@@ -1,12 +1,10 @@
 "use strict";
-/////================ СОЗДАЕМ НОВЫЕ КАРТОЧКИ (Попапы пинов на карте) ================//////
-
+/////================ МОДУЛЬ СОЗДАНИЯ НОВЫХ КАРТОЧЕК (Попапы пинов на карте) ================//////
 (function () {
 
     //Находим наш шаблон Карточки
     var mapCardTemplate = document.querySelector('#card').content.querySelector('.map__card');
-    // console.log(mapCardTemplate);
-
+    
     //Создаем DOM-ноду
     var mapCardFragment = document.createDocumentFragment();
 
@@ -21,10 +19,10 @@
         mapCardElement.querySelector('.popup__title').textContent = objects[i].offer.title;
 
         //Перезаписываем адрес, меняя его на адрес из массива объектов
-        mapCardElement.querySelector('.popup__text--address').textContent = objects[i].offer.address;
+        mapCardElement.querySelector('.popup__text--address').textContent = `координаты на карте: ` + `${objects[i].offer.address}`;
 
         //Перезаписываем цену, меняя ее на цену из массива объектов
-        mapCardElement.querySelector('.popup__text--price').textContent = `${objects[i].offer.price}` + `₴/ночь`;
+        mapCardElement.querySelector('.popup__text--price').textContent = `${objects[i].offer.price}` + ` ₴/ночь`;
 
 
         //Перезаписываем тип жилья, меняя его на тип жилья из массива объектов
@@ -49,7 +47,6 @@
 
 
         /////<<<<<<<< СОЗДАЕМ СПИСОК ИЗ УДОБСТВ (параметров) КВАРТИРЫ =====//////
-
         //Глубокое копирование шаблона - элемента списка параметров
         var mapFeatureTemplate = mapCardTemplate.querySelector('.popup__features > li');
 
@@ -77,8 +74,6 @@
         for (var t = 0; t < featureHidden.length; t++) {
             mapCardElement.querySelector('.popup__features').removeChild(featureHidden[t]);
         }
-
-
         //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 
 
@@ -91,7 +86,6 @@
 
 
         /////<<<<<<<< СОЗДАЕМ СПИСОК ИЗ ФОТОГРАФИЙ =====//////
-
         //Глубокое копирование шаблона - элемента списка c изображением
         var mapPictureTemplate = mapCardTemplate.querySelector('.popup__pictures > li');
 
@@ -117,7 +111,6 @@
 
         //Замениa аватарки пользователя
         mapCardElement.querySelector('.popup__avatar').src = objects[i].author.avatar;
-        // console.log(mapCardElement);
 
 
         //Создаем КАРТОЧКИ (добавляем в разметку страницы)

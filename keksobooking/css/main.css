@@ -382,6 +382,10 @@ textarea:focus {
   margin-bottom: 0.3em;
 }
 
+.popup__text--price {
+  background-color: #ffff92;
+}
+
 .popup__pictures {
   display: -webkit-box;
   display: -webkit-flex;

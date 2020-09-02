@@ -133,7 +133,7 @@
     };
 
     //Функция деактивации страницы
-    var formReset = function () {
+    window.formReset = function () {
         mapHidden (); //Функция скрытия карты
         form.reset(); //Сброс формы
         noticeFormDisabled(); //метод скрытия полей форм

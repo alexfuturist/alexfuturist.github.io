@@ -1,9 +1,10 @@
 "use strict";
-//Создаем массив из объектов
-var objects = [];
 
-//Функция создания 8 объектов со всеми данными о помещениях
+//МОДУЛЬ создания 8 объектов со всеми данными о помещениях
 (function () {
+
+    //Создаем массив из объектов
+    window.objects = [];
 
     //Объект типов, загаловков, фотографий жилья
     var TYPE_AND_TITLES = {
@@ -126,8 +127,6 @@ var objects = [];
 
         //Возрат случайной цены от 100 до 10 000
         var price = 100 + ((Math.floor(Math.random() * 100) * 99));
-        // console.log(price);
-
 
         //Возрат случайного значения ТИПА жилья из объекта параметров жилья
         var type = TYPE_AND_TITLES[typeAndTitlesArrSort[i]].TYPE;
@@ -137,10 +136,10 @@ var objects = [];
 
 
         //Возрат случайного колличества комнат от 1 до 5
-        var rooms = Math.ceil(Math.random() * 5);
+        var rooms = Math.ceil(Math.random() * 3);
 
         //Возрат случайного числа гостей
-        var guests = Math.ceil(Math.random() * 20);
+        var guests = Math.ceil(Math.random() * 3);
 
         //Возрат случайного времени заселения
         var checkin = CHECKIN[Math.floor(Math.random() * 3)];
@@ -175,10 +174,7 @@ var objects = [];
             return 0.5 - Math.random()
         });
 
-        // console.log(photos);
-        // var photos = TYPE_AND_TITLES[typeAndTitlesKey].PHOTOS;
-
-
+        
 
         //Измеряем ширину блока, в котором перетаскивается метка
         window.blockWidth = (document.querySelector('.map__pins').offsetWidth) - 40;
@@ -232,8 +228,11 @@ var objects = [];
 
         //Записываем объекты в массив 
         objects[i] = object;
+
     };
 
-}) ();
+    console.log(objects);
+
+})();
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
