@@ -672,7 +672,27 @@ textarea:focus {
 }
 
 .form__photo-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.form__photo-container .upload {
   width: 140px;
+  margin-right: 18px;
+}
+
+.form__photo {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 70px;
+  height: 70px;
+  background-color: #e4e4de;
+  border-radius: 5px;
 }
 
 .form__element--submit {
@@ -720,9 +740,13 @@ textarea:focus {
   width: 50%;
 }
 
+.copyright__link {
+  font-weight: 700;
+}
+
 .footer-logo {
   position: relative;
-  padding-top: 55px;
+  padding-top: 10px;
 }
 
 .footer-logo-link:hover {
